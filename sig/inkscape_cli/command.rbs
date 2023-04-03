@@ -5,7 +5,7 @@ module InkscapeCLI
     attr_reader timeout: Integer
 
     def self.new: -> Command
-    def initialize: (String, ?timeout:Integer) -> Command
+    def initialize: (?executable:String, ?timeout:Integer) -> Command
     def <<: (String) -> Command
     def execute: -> Command
     def input_file: (String) -> Command

@@ -15,8 +15,8 @@ module InkscapeCLI
       end
     end
 
-    def initialize(executable = 'inkscape', timeout: 300)
-      @executable = 'inkscape'
+    def initialize(executable: InkscapeCli::Configuration.executable, timeout: InkscapeCli::Configuration.timeout)
+      @executable = executable
       @args = []
       @timeout = timeout
     end

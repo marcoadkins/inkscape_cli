@@ -1,0 +1,15 @@
+module InkscapeCLI
+  class Command
+    attr_reader args: Array[String]
+    attr_reader executable: String
+    attr_reader timeout: Integer
+
+    def self.new: -> Command
+    def initialize: (String, ?timeout:Integer) -> Command
+    def <<: (String) -> Command
+    def execute: -> Command
+    def input_file: (String) -> Command
+    def input_file=: (String) -> Command
+    def method_missing: -> Command
+  end
+end

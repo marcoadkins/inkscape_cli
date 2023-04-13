@@ -12,8 +12,30 @@ If bundler is not being used to manage dependencies, install the gem by executin
     $ gem install inkscape_cli
 
 ## Usage
+```ruby
+require 'inkscape_cli'
 
-TODO: Write usage instructions here
+command = InkscapeCLI::Command.new
+command << 'input.svg'
+command.export_width(500)
+command.export_filename('out.png')
+command.execute
+
+InkscapeCLI::Command.new.input_file('input.svg').export_filename('out.png').execute
+
+InkscapeCLI::Command.new do |command|
+  command << 'input.svg'
+  command.export_filename = 'out.png'
+end
+```
+
+## Configuration
+```ruby
+InkscapeCli.configure do |config|
+  config.executable = 'inkscape'
+  config.timeout = 300
+end
+```
 
 ## Development
 

@@ -1,7 +1,7 @@
-module InkscapeCli
+module InkscapeCLI
   module Configuration
     def configure: -> Configuration
 
-    def define_setting: (Symbol | String, ?untyped) -> nil
+    def define_setting: (Symbol | String, ?untyped) -> Symbol
   end
 end

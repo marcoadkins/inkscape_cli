@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-RSpec.describe InkscapeCli do
+RSpec.describe InkscapeCLI do
   it 'has a version number' do
-    expect(InkscapeCli::VERSION).not_to be nil
+    expect(InkscapeCLI::VERSION).not_to be nil
   end
 end

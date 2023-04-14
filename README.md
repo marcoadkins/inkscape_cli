@@ -1,4 +1,4 @@
-# InkscapeCli
+# InkscapeCLI
 Simple ruby wrapper for inkscape cli
 
 ## Installation
@@ -31,7 +31,7 @@ end
 
 ## Configuration
 ```ruby
-InkscapeCli.configure do |config|
+InkscapeCLI.configure do |config|
   config.executable = 'inkscape'
   config.timeout = 300
 end

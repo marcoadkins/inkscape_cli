@@ -6,8 +6,8 @@ require 'inkscape_cli/configuration'
 require 'open3'
 require 'timeout'
 
-module InkscapeCli
-  extend InkscapeCli::Configuration
+module InkscapeCLI
+  extend InkscapeCLI::Configuration
 
   define_setting :executable, 'inkscape'
   define_setting :timeout, 300

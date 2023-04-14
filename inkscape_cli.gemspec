@@ -4,7 +4,7 @@ require_relative 'lib/inkscape_cli/version'
 
 Gem::Specification.new do |spec|
   spec.name = 'inkscape_cli'
-  spec.version = InkscapeCli::VERSION
+  spec.version = InkscapeCLI::VERSION
   spec.authors = ['Eezy Developers']
   spec.email = ['dev@eezy.com']
 

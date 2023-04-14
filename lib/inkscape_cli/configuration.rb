@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module InkscapeCli
+module InkscapeCLI
   module Configuration
     def configure
       yield self

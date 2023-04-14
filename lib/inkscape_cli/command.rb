@@ -15,7 +15,7 @@ module InkscapeCLI
       end
     end
 
-    def initialize(executable: InkscapeCli::Configuration.executable, timeout: InkscapeCli::Configuration.timeout)
+    def initialize(executable: InkscapeCLI.executable, timeout: InkscapeCLI.timeout)
       @executable = executable
       @args = []
       @timeout = timeout
@@ -35,7 +35,7 @@ module InkscapeCLI
 
         exit_status = thread.value.exitstatus
         if exit_status != 0
-          raise InkscapeCli::Error,
+          raise InkscapeCLI::Error,
                 "Inkscape command failed with status: #{exit_status} and error: #{stderr_reader.value}"
         end
 

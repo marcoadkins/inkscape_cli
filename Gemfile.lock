@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    inkscape_cli (1.0.0)
+    inkscape_cli (1.0.2)
 
 GEM
   remote: https://rubygems.org/

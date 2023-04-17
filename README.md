@@ -16,7 +16,7 @@ If bundler is not being used to manage dependencies, install the gem by executin
 require 'inkscape_cli'
 
 command = InkscapeCLI::Command.new
-command << 'input.svg'
+command.input_file = 'input.svg'
 command.export_width(500)
 command.export_filename('out.png')
 command.execute

@@ -24,7 +24,7 @@ command.execute
 InkscapeCLI::Command.new.input_file('input.svg').export_filename('out.png').execute
 
 InkscapeCLI::Command.new do |command|
-  command << 'input.svg'
+  command.input_file = 'input.svg'
   command.export_filename = 'out.png'
 end
 ```

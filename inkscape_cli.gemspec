@@ -5,8 +5,8 @@ require_relative 'lib/inkscape_cli/version'
 Gem::Specification.new do |spec|
   spec.name = 'inkscape_cli'
   spec.version = InkscapeCLI::VERSION
-  spec.authors = ['Eezy Developers']
-  spec.email = ['dev@eezy.com']
+  spec.authors = ['Marco Adkins']
+  spec.email = ['marcoadkins88@gmail.com']
 
   spec.summary = 'Safe inkscape command line interface'
   spec.description = 'Handles escaping and preventing malicious commands while shelling out to inkscape.'
